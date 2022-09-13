@@ -23,6 +23,13 @@
   border: 1px solid white;
 }
 
+.flex {
+  display: flex;
+
+  justify-content: space-between;
+  align-content: space-between;
+}
+
 .text-display {
   color: black;
   font-size: 0.825em;
@@ -31,4 +38,32 @@
 
 p {
   font-size: calc(15px + 0.390625vw);
+}
+
+.delete {
+  color: black;
+  position: absolute;
+  top: 0.25rem;
+  right: 0.5rem;
+  cursor: pointer;
+}
+
+.edit {
+  color: black;
+  position: absolute;
+  bottom: 0;
+  right: 0.5rem;
+  cursor: pointer;
+}
+
+.delete:hover,
+.edit:hover {
+  transform: scale(1.3);
+  transition: 200ms ease-in-out all;
+}
+
+.delete:active,
+.edit:active {
+  transform: scale(0);
+  transition: 200s ease-in-out;
 }

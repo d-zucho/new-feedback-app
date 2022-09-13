@@ -1,13 +1,16 @@
 import './App.css'
 import Header from './components/Header'
 import FeedbackItem from './components/FeedbackItem'
+import InputBox from './components/InputBox'
+import Reviews from './components/Reviews'
 
 function App() {
   return (
     <div className='App'>
       <div className='container'>
         <Header />
-        <FeedbackItem />
+        <InputBox />
+        <Reviews />
       </div>
     </div>
   )

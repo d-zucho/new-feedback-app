@@ -1,2 +1,13 @@
+@media screen and (min-width: 980px) {
+  body {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 
-
+@media screen and (min-width: 600) {
+  body {
+    width: 92%;
+    margin: 0 auto;
+  }
+}
