@@ -1,23 +1,26 @@
-import { useState } from 'react'
 import { BiEdit } from 'react-icons/bi'
 import { AiOutlineClose } from 'react-icons/ai'
 
 import '../styles/feedbackItem.styles.css'
 
-const FeedbackItem = ({ rating, text }) => {
+const FeedbackItem = ({ review, onDelete }) => {
+  // const handleDelete = () => {
+  //   console.log(id)
+  // }
+
   return (
     <div className='card'>
-      <div className='num-display'>{rating}</div>
+      <div className='num-display'>{review.rating}</div>
 
       <div className='text-display'>
-        <p>{text}</p>
+        <p>{review.text}</p>
       </div>
-      <div className='icons'>
+      <div onClick={() => onDelete(review.id)} className='icons'>
         <div className='delete'>
-          <AiOutlineClose />
+          <AiOutlineClose title='delete' />
         </div>
         <div className='edit'>
-          <BiEdit />
+          <BiEdit title='Edit' />
         </div>
       </div>
     </div>

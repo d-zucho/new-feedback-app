@@ -1,20 +1,9 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 
-import '../styles/inputBok.styles.css'
+import '../styles/inputBox.styles.css'
 
 const InputBox = () => {
-  const [reviewText, setReviewText] = useState('')
-
-  // const handleClick = (input) => {
-
-  //   setReviewText((text) => {
-  //     return {
-  //       reviewText: text,
-  //     }
-  //   })
-
-  //   document.querySelector('.new-review-text').value = ''
-  // }
+  // const [reviewText, setReviewText] = useState('')
 
   return (
     <section>

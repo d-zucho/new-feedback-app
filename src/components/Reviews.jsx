@@ -1,18 +1,23 @@
 import DATA from '../reviewData'
 import FeedbackItem from './FeedbackItem'
-
 import { useState } from 'react'
 
 const Reviews = () => {
-  const [feedbackData, setFeedbackData] = useState(DATA)
+  const [feedbackData, setfeedbackData] = useState(DATA)
+
+  const handleDelete = (id) => {
+    console.log(id)
+    console.log('From Reviews')
+  }
 
   return (
     <section>
-      {DATA.map((review) => (
+      {feedbackData.map((review) => (
         <FeedbackItem
           key={review.id}
-          rating={review.rating}
-          text={review.text}
+          review={review}
+          onDelete={(id) => handleDelete(id)}
+          setfeedbackData={setfeedbackData}
         />
       ))}
     </section>

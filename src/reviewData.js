@@ -1,4 +1,4 @@
-let review = [
+let DATA = [
   {
     id: 1,
 
@@ -19,4 +19,4 @@ let review = [
   },
 ]
 
-export default review
+export default DATA
