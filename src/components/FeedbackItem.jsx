@@ -3,11 +3,7 @@ import { AiOutlineClose } from 'react-icons/ai'
 
 import '../styles/feedbackItem.styles.css'
 
-const FeedbackItem = ({ review, onDelete }) => {
-  // const handleDelete = () => {
-  //   console.log(id)
-  // }
-
+const FeedbackItem = ({ review, handleDelete }) => {
   return (
     <div className='card'>
       <div className='num-display'>{review.rating}</div>
@@ -15,8 +11,8 @@ const FeedbackItem = ({ review, onDelete }) => {
       <div className='text-display'>
         <p>{review.text}</p>
       </div>
-      <div onClick={() => onDelete(review.id)} className='icons'>
-        <div className='delete'>
+      <div className='icons'>
+        <div onClick={() => handleDelete(review.id)} className='delete'>
           <AiOutlineClose title='delete' />
         </div>
         <div className='edit'>
