@@ -1,3 +1,5 @@
+import '../styles/feedbackForm.styles'
+
 const FeedbackForm = () => {
   return (
     <section className='container feedback-form'>
