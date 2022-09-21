@@ -8,10 +8,10 @@
   padding: 2em;
 }
 
-.num-display {
+.numb-display {
   padding: 4px 2px;
   background-color: rgb(251, 76, 105);
-  /* font-size: 0.725em; */
+  font-size: calc(1rem + 0.325vw);
   font-weight: 500;
   width: 2em;
   height: 2em;

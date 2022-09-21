@@ -1,12 +1,11 @@
 import { PropTypes } from 'prop-types'
 import '../styles/button.styles.css'
 
-const Button = ({ type, children, isDisabled }) => {
+const Button = ({ children, isDisabled }) => {
   return (
     <button
-      type={type}
-      disabled='true'
-      isDisabled={isDisabled}
+      // disabled='true'
+      disabled={isDisabled}
       className={`submit-button btn-${isDisabled}`}
     >
       {children}
@@ -21,7 +20,6 @@ Button.defaultProps = {
 Button.propTypes = {
   children: PropTypes.node.isRequired,
   isDisabled: PropTypes.bool,
-  type: PropTypes.string,
 }
 
 export default Button

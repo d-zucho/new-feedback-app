@@ -6,7 +6,7 @@ import '../styles/feedbackItem.styles.css'
 const FeedbackItem = ({ review, handleDelete }) => {
   return (
     <div className='card'>
-      <div className='num-display'>{review.rating}</div>
+      <div className='numb-display'>{review.rating}</div>
 
       <div className='text-display'>
         <p>{review.text}</p>

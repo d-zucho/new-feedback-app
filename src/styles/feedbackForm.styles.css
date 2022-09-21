@@ -1,15 +1,20 @@
-.feedback-form h2 {
+.feedback-form {
   color: black;
+  /* text-align: center; */
+}
+
+.feedback-form h2 {
   text-align: center;
 }
 
 .review-input {
   border: 1px solid #bcbcbc;
-  width: 100%;
+  width: min(100%, 650px);
   height: 2rem;
   border-radius: 12px;
   padding: 0 10px;
-  margin: 2rem 0 0.725rem;
+  margin: 2rem auto 0.725rem;
+  display: block;
 }
 
 .review-input:focus {

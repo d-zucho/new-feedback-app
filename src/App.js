@@ -7,6 +7,7 @@ import FeedbackForm from './components/FeedbackForm'
 
 import { useState } from 'react'
 import AverageStats from './components/AverageStats'
+import { v4 as uuidv4 } from 'uuid'
 
 function App() {
   const [feedbackData, setfeedbackData] = useState(DATA)
@@ -19,13 +20,20 @@ function App() {
     }
   }
 
+  const addFeedback = (newFeedback) => {
+    newFeedback.id = uuidv4()
+    console.log(newFeedback)
+
+    setfeedbackData([newFeedback, ...feedbackData])
+  }
+
   return (
     <div className='App'>
       <div className='container'>
         <Header />
         {/* <InputBox /> */}
         <AverageStats feedbackData={feedbackData} />
-        <FeedbackForm feedbackData={feedbackData} />
+        <FeedbackForm handleAdd={addFeedback} feedbackData={feedbackData} />
         <Reviews feedbackData={feedbackData} handleDelete={handleDelete} />
       </div>
     </div>
