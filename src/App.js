@@ -10,6 +10,7 @@ import AverageStats from './components/AverageStats'
 
 function App() {
   const [feedbackData, setfeedbackData] = useState(DATA)
+
   // const [stats, setStats] = useState(10)
 
   const handleDelete = (id) => {
@@ -24,7 +25,7 @@ function App() {
         <Header />
         {/* <InputBox /> */}
         <AverageStats feedbackData={feedbackData} />
-        <FeedbackForm />
+        <FeedbackForm feedbackData={feedbackData} />
         <Reviews feedbackData={feedbackData} handleDelete={handleDelete} />
       </div>
     </div>

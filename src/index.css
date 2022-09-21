@@ -11,7 +11,7 @@
 }
 
 html {
-  font-size: max(1em, min(3em, calc(100vw * 4 / 75)));
+  font-size: 16px;
 }
 button {
   font-size: calc(12px + 0.390625vw);
@@ -23,6 +23,7 @@ button {
 
 body {
   font-family: 'Poppins', sans-serif;
+  min-width: 375px;
   min-height: 100vh;
   width: 100vw;
   background-color: #1b2845;
@@ -30,9 +31,13 @@ body {
   line-height: 1.6;
 }
 
-/* h1 {
-  font-size: calc(1.5rem + 3vw);
-} */
+h1 {
+  font-size: calc(2.5rem + 3vw);
+}
+
+h2 {
+  font-size: calc(1.5rem + 0.725vw);
+}
 
 ul {
   list-style: none;

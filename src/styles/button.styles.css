@@ -1,0 +1,18 @@
+.submit-button {
+  display: block;
+  margin: 1rem auto;
+  width: 80%;
+  background-color: #fb4c69;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+.btn-true {
+  box-shadow: none;
+  background-color: slategray;
+}
+
+/* .submit-button:active {
+  transition: 100ms ease-in-out all;
+  transform: scale(0.9);
+} */
