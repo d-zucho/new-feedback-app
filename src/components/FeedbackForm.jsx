@@ -33,11 +33,11 @@ const FeedbackForm = ({ handleAdd }) => {
     const newFeedback = {
       id: 4,
       rating: rating,
-      review: inputText,
+      text: inputText,
     }
     handleAdd(newFeedback)
 
-    userInput.value = ''
+    setInputText('')
   }
 
   return (
